@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            background-color: paleturquoise;
+        }
+    </style>
+</head>
+~
+<body>
+    <h1> Bank Account Opening Form</h1>
+    <form>
+        Account Type:
+        <br>
+        <select name="type">
+            <option value="current">Current Account</option>
+            <option value="saving">Savings Account</option>
+            <option value="cheque">Cheque</option>
+            <option value="fixed">Fixed Deposit Account</option>
+        </select>
+        <p>
+            Full Name:
+            <br>
+            <select name="name">
+                <option value="mr">Mr</option>
+                <option value="mrs">Mrs</option>
+                <option value="miss">Miss</option>
+                <option value="sir">Sir</option>
+                <option value="lady">Lady</option>
+                <option value="dr">Dr</option>
+                <option value="lord">Lord</option>
+            </select>
+            <input type="text" name="first" placeholder="First Name">
+            <input type="text" name="last" placeholder="Last Name">
+        </p>
+        <p>
+            Date of Birth:
+            <br>
+            <input type="date" name="birth" required>
+        </p>
+        <p>
+            Monthly Salary:
+            <br>
+            <input type="number" name="salary" min="30000" required>
+        </p>
+        <p>
+            E-mail:
+            <br>
+            <input type="email" name="mail" placeholder="abc123@example.com" required>
+        </p>
+        <p>
+            Password:
+            <br>
+            <input type="password" name="password" required>
+        </p>
+        <p>
+            Contact Number:
+            <br>
+            <input type="tel" name="contact" placeholder="0300-0000000"required max="11" min="11">
+        </p>
+        <p>
+            Address:
+            <br>
+            <input type="text" name="street" placeholder="street adress" required>
+            <input type="text" name="streer2" placeholder="Street Adress Line 2" required>
+        </p>
+        <p>
+            How did you hear about us?
+            <br>
+            <input type="checkbox" name="about" value="sms">SMS
+            <br>
+            <input type="checkbox" name="about" value="billboards">Outdoor billboards
+            <br>
+            <input type="checkbox" name="about" value="news">Newspaper
+            <br>
+            <input type="checkbox" name="about" value="internet">Internet
+            <br>
+            <input type="checkbox" name="about" value="social">Social Media
+            <br>
+            <input type="checkbox" name="about" value="other">Other
+        </p>
+        <p>Gender:</p>
+        <input id="female" type="radio" name="gender" value="f">
+        <label for="female">Female</label>
+        <input id="male" type="radio" name="gender" value="m">
+        <label for="male">Male</label>
+        <p>
+            <input type="submit" value="Submit Now">
+        </p>
+    </form>
+</body>
+
+</html>
